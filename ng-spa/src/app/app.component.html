@@ -1,22 +1,45 @@
+<div>
+  <h1>Problem #1 [Easy]</h1>
+  <p>This problem was recently asked by Google.</p>
+  <p></p>
 
-<p>This problem was recently asked by Google.<p>
+  <p>
+    Given a list of numbers and a number k, return whether any two numbers from
+    the list add up to k.
+  </p>
 
-  <p>Given a list of numbers and a number k, return whether any two numbers from the list add up to k.</p>
-
-  <p>For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.</p>
+  <p>
+    For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is
+    17.
+  </p>
 
   <p>Bonus: Can you do this in one pass?</p>
 
-  <div *ngFor="let item of text; index as i;">
-    <div>
-      Numbers => {{ item.numbers | json }}
-    </div>
-    <div>
-      Sum = {{ item.value }}
-    </div>
-    <div>
-      Is matched: {{ item.isMatched }}
-    </div>
+  <div *ngFor="let item of text; index as i">
+    <div>Numbers => {{ item.numbers | json }}</div>
+    <div>Sum = {{ item.value }}</div>
+    <div>Is matched: {{ item.isMatched }}</div>
   </div>
+</div>
 
-  <router-outlet></router-outlet>
+<div>
+  <h1>Problem #2 [Hard]</h1>
+  <p>This problem was asked by Uber.</p>
+
+  <p>
+    Given an array of integers, return a new array such that each element at
+    index i of the new array is the product of all the numbers in the original
+    array except the one at i.
+  </p>
+  <p>
+    For example, if our input was [1, 2, 3, 4, 5], the expected output would be
+    [120, 60, 40, 30, 24]. If our input was [3, 2, 1], the expected output would
+    be [2, 3, 6].
+  </p>
+
+  <p>
+    Follow-up: what if you can't use division?
+  </p>
+</div>
+
+<router-outlet></router-outlet>
